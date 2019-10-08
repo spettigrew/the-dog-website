@@ -9,7 +9,7 @@ import "./App.css";
 function App (props) {
   const [breed, setBreed] = useLocalStorage('breed', 'husky');
   const [count, setCount ] = useLocalStorage('count', 1);
-  const [images, setImages] = useDogImages(breed, count);
+  const [images] = useDogImages(breed, count);
 
   return (
     <>
@@ -37,6 +37,6 @@ function App (props) {
     </>
   )
  }
- 
+
 
 export default App;
